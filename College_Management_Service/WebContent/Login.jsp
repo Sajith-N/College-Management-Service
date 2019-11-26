@@ -7,13 +7,14 @@
 <title>College Login Page</title>
 </head>
 <body>
-<h1>
-                              Login
+<h1 align="center">
+Login
 </h1>
 <div id="message">
 ${message}
 </div>
 <form action="loginServlet" method="post">
+		<div align="center">
 		<table style="with: 50%">
  
 			<tr>
@@ -29,6 +30,6 @@ ${message}
 <a href="http://localhost:8080/College_Management_Service/ForgotPassword.jsp">Forgot Password</a>   <a href="http://localhost:8080/College_Management_Service/Register.jsp">Register</a>
 </pre>
 		<input type="submit" value="Login" /></form>
-		
+		</div>
 </body>
 </html>
