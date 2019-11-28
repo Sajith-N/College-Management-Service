@@ -13,8 +13,9 @@ Login
 <div id="message">
 ${message}
 </div>
+<div align="center">
 <form action="loginServlet" method="post">
-		<div align="center">
+		
 		<table style="with: 50%">
  
 			<tr>
@@ -27,7 +28,7 @@ ${message}
 			</tr>
 		</table>
 		<pre>
-<a href="http://localhost:8080/College_Management_Service/ForgotPassword.jsp">Forgot Password</a>   <a href="http://localhost:8080/College_Management_Service/Register.jsp">Register</a>
+<a href="http://localhost:8080/College_Management_Services/ForgottenPassword.jsp">Forgot Password</a>   <a href="http://localhost:8080/College_Management_Service/Register.jsp">Register</a>
 </pre>
 		<input type="submit" value="Login" /></form>
 		</div>
