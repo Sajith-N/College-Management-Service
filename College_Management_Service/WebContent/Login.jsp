@@ -10,9 +10,13 @@
 <h1 align="center">
 Login
 </h1>
-<div id="message">
+<div id="message" align="center">
 ${message}
 </div>
+
+<br>
+<br>
+
 <div align="center">
 <form action="loginServlet" method="post">
 		
@@ -28,7 +32,7 @@ ${message}
 			</tr>
 		</table>
 		<pre>
-<a href="http://localhost:8080/College_Management_Services/ForgottenPassword.jsp">Forgot Password</a>   <a href="http://localhost:8080/College_Management_Service/Register.jsp">Register</a>
+<a href="/College_Management_Service/ForgottenPassword.jsp">Forgot Password</a>   <a href="/College_Management_Service/Login.jsp/Register.jsp">Register</a>
 </pre>
 		<input type="submit" value="Login" /></form>
 		</div>
