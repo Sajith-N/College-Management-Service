@@ -32,7 +32,7 @@ ${message}
 			</tr>
 		</table>
 		<pre>
-<a href="/College_Management_Service/ForgottenPassword.jsp">Forgot Password</a>   <a href="/College_Management_Service/Login.jsp/Register.jsp">Register</a>
+<a href="/College_Management_Service/ForgottenPassword.jsp">Forgot Password</a>   <a href="/College_Management_Service/Register.jsp">Register</a>
 </pre>
 		<input type="submit" value="Login" /></form>
 		</div>

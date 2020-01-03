@@ -10,7 +10,7 @@
 </div>
 </head>
 <body>
-<form action="/CourseSearch" method="get">
+<form action="CourseSearch" method="post">
 <div align="center">
 		<table style="with: 100%" >
 	<tr>
@@ -34,7 +34,7 @@
 <br>
 <br>
 <br><tr><td></td><td>
-<input type="button" text="Search" value="Search">
+<input type="submit" text="Search" value="Search">
 </td></tr>
 </table>
 </div>

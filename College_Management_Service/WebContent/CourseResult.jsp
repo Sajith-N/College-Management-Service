@@ -12,11 +12,14 @@
 <body bgcolor=yellow>
 <script>
     <%
-    try
-    {
-     DBUtil db=new DBUtil();
-     Connection con=db.getDBConnection();
-        PreparedStatement psmt=con.prepareStatement("select CourseId,CourseName from master where Semester=? and Department=?;");
+    		Connection conn = null;
+
+    		try {
+    			
+    			Class.forName("com.mysql.cj.jdbc.Driver");
+    			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/sajith", "root", "mysql");
+    			System.out.println("connection : " + conn);
+        PreparedStatement psmt=conn.prepareStatement("select CourseId,CourseName from master where Semester=? and Department=?;");
         psmt.setString(1,"Semester - 01");
         psmt.setString(2,"Computer Science");
         ResultSet rs=psmt.executeQuery();
