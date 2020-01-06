@@ -9,8 +9,7 @@
 <h2>Course Lists</h2>
 
 </head>
-<body bgcolor=yellow>
-<script>
+<body>
     <%
     		Connection conn = null;
 
@@ -23,7 +22,9 @@
         psmt.setString(1,"Semester - 01");
         psmt.setString(2,"Computer Science");
         ResultSet rs=psmt.executeQuery();
-    %><table border=1 align=center style="text-align:center">
+        System.out.println("Result : " +rs);
+       %>
+   <table align=center style="text-align:center">
       <thead>
           <tr>
              <th>CourseId</th>
@@ -31,21 +32,23 @@
           </tr>
       </thead>
       <tbody>
-        <%while(rs.next())
+      <%while(rs.next())
         {
             %>
-            <tr>
+            <tr bgcolor="#DEB887">
                 <td><%=rs.getString(1) %></td>
                 <td><%=rs.getString(2) %></td>
             </tr>
-            <%}%>
-           </tbody>
-        </table><br>
-    <%}
+            
+            <%
+            }    
+    }
     catch(Exception e){
-        out.print(e.getMessage());%><br><%
+        out.print(e.getMessage());
     }
   
-    %></script>
+    %>
+    </tbody>
+    </table>
     </body>
 </html>

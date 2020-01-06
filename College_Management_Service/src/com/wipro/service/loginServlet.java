@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.wipro.dao.LoginDAO;
+
 /**
  * Servlet implementation class loginServlet
  */
@@ -33,6 +35,7 @@ public class loginServlet extends HttpServlet {
 		request.setAttribute("message","Login is Successfull");
 		request.getRequestDispatcher("/Login.jsp").forward(request, response);
 		System.out.println(""+request.getParameter("username"));
+		System.out.println(new LoginDAO().getLoginDao());
 	}
 
 	/**

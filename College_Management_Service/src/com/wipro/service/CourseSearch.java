@@ -3,7 +3,7 @@ package com.wipro.service;
 import java.io.IOException;
 import java.sql.Connection;
 
-import com.wipro.service.DBUtil;
+import com.wipro.dbutil.*;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
