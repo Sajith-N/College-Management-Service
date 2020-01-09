@@ -30,14 +30,15 @@ public class Register extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.setContentType("text/html");
-		String userID=request.getParameter("userID");
-		String Name=request.getParameter("Name");
-		String Age=request.getParameter("Age");
-		String Password=request.getParameter("Password");
-		String Gender=request.getParameter("Gender");
-		String Department=request.getParameter("Department");
-		String Semester=request.getParameter("Semester");
-		System.out.println("userID : "+userID+"Gender : "+Gender+"Department :"+Department+"Semester : "+Semester);
+		String userID=request.getParameter("userId");
+		String Name=request.getParameter("name");
+		String Age=request.getParameter("age");
+		String Password=request.getParameter("password");
+		String Gender=request.getParameter("gender");
+		String Department=request.getParameter("department");
+		String Semester=request.getParameter("semester");
+		String petname=request.getParameter("petname");
+		System.out.println("userID : "+userID+"Gender : "+Gender+"Department :"+Department+"Semester : "+Semester+"Petname : "+petname+"Age : "+Age);
 		PrintWriter out=response.getWriter();
 		out.println("User is registered in the form");
 		out.println("userID : "+userID+"Gender : "+Gender+"Department :"+Department+"Semester : "+Semester);

@@ -37,6 +37,8 @@ System.out.println("Inside Course search page");
 String semester=request.getParameter("semester");
 System.out.println("Request :"+department+"   Semester : "+semester);
 System.out.println("Connection :  "+conn);
+request.setAttribute("semester", semester);
+request.setAttribute("department", department);
 RequestDispatcher rd=request.getRequestDispatcher("/CourseResult.jsp");
 rd.include(request, response);
 	}

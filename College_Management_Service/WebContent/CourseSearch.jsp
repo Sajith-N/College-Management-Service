@@ -15,9 +15,9 @@
 		<table style="with: 100%" >
 	<tr>
 				<td>Department               </td>
-<td>				 <select id="department" name="department">
+<td>				 <select id="department">
                      <option input type="text"  value="Computer Science" selected >Computer Science</option>
-                     <option input type="text"  value="Information Technology">Information Technology</option>
+                     <option input type="text"  value="Information and Technology">Information Technology</option>
                   </select>
 </td>
 </tr>
@@ -25,9 +25,9 @@
 <br>	<tr>
 				<td>Semester           </td>
 				<td>  <select id="semester" name="semester">
-                     <option input type="text"  value="Semester-01" selected >Semester-01</option>
-                     <option input type="text" value="Semester-02">Semester-02</option>
-                     <option input type="text" value="Semester-03">Semester-03</option>
+                     <option input type="text"  value="Semester - 01" selected >Semester-01</option>
+                     <option input type="text" value="Semester - 02">Semester-02</option>
+                     <option input type="text" value="Semester - 03">Semester-03</option>
                   </select>
                   </td>
 </tr>
