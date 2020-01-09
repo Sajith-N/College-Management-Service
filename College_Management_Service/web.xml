@@ -1,8 +1,0 @@
-<web-app>  
-  
-<servlet>  
-   <servlet-name>loginServlet</servlet-name>  
-   <servlet-class>com.wipro.service.loginServlet</servlet-class>  
-   <load-on-startup>0</load-on-startup>  
-  </servlet> 
-</web-app>  
