@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<h2 align="center">Course Lists</h2>
+<h2 align="center">Student List</h2>
 
 </head>
 <body>
@@ -19,21 +19,17 @@
     			
     			conn = DBUtil.getDBConnection();
     			System.out.println("connection : " + conn);
-        PreparedStatement psmt=conn.prepareStatement("select CourseId,CourseName from master where Semester=? and Department=?;");
-       String query1=request.getAttribute("semester").toString();
-       String query2=request.getAttribute("department").toString();
-       out.println(query1);
-       out.println(query2);
-        psmt.setString(1,query1);
-        psmt.setString(2,query2);
+        PreparedStatement psmt=conn.prepareStatement("select name,Department,Semester from userdetails;");
         ResultSet rs=psmt.executeQuery();
         System.out.println("Result : " +rs);
        %>
    <table align=center style="text-align:center">
       <thead>
           <tr>
-             <th>CourseId</th>
-             <th>CourseName</th>
+             <th>Name</th>
+             <th>Department</th>
+             <th>Semester</th>
+             <th>Action</th>
           </tr>
       </thead>
       <tbody>
@@ -43,6 +39,9 @@
             <tr bgcolor="#DEB887">
                 <td><%=rs.getString(1) %></td>
                 <td><%=rs.getString(2) %></td>
+                <td><%=rs.getString(3) %></td>
+                <td><input type="button" value="Delete"></td>
+            
             </tr>
             
             <%
