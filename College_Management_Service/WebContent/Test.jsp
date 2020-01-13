@@ -25,6 +25,7 @@
   <h3>Bottom Fixed Navbar</h3>
   <h1>Scroll this page to see the effect</h1>
 </div>
+
 </body>
 </html>
 

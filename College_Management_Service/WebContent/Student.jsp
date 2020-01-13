@@ -23,7 +23,7 @@
         ResultSet rs=psmt.executeQuery();
         System.out.println("Result : " +rs);
        %>
-   <table align=center style="text-align:center">
+   <table id="table" align=center style="text-align:center" border="1" cellpadding="5">
       <thead>
           <tr>
              <th>Name</th>
@@ -40,7 +40,7 @@
                 <td><%=rs.getString(1) %></td>
                 <td><%=rs.getString(2) %></td>
                 <td><%=rs.getString(3) %></td>
-                <td><input type="button" value="Delete"></td>
+                <td class="text-center"><a href='Delete.jsp?d=<%=rs.getString(1)%>' class="btn btn-danger">Delete</td>
             
             </tr>
             
@@ -54,5 +54,10 @@
     %>
     </tbody>
     </table>
+    <script>
+
+ 
+
+</script>
     </body>
 </html>
