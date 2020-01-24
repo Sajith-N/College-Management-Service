@@ -1,0 +1,23 @@
+<html>
+<body>
+<script>
+function playme()
+{
+    document.getElementById('video1').src = "https://www.youtube.com/embed/G2KlPOYu6U8"; //use embed url from you tube
+    document.getElementById('video1').style.display = '';
+    document.getElementById('video2').style.display = 'none';//set display to default
+}
+function playme1()
+{
+    document.getElementById('video2').src = "https://www.youtube.com/embed/G2KlPOYu6U8"; //use embed url from you tube
+    document.getElementById('video2').style.display = '';
+    document.getElementById('video1').style.display = 'none'; //set display to default
+}
+</script>
+    <a href="#" id="playvideo" onclick="playme()">Video 1</a><br/>
+  <iframe id="video1" align="right" height="80%" width="89.8%" style.display = 'none' ></iframe> 
+     <a href="#" id="playvideo1" onclick="playme1()">Video 2</a><br/>
+     <iframe id="video2" align="right" height="80%" width="89.8%" style.display = 'none' ></iframe> 
+    <!-- use style="display: none;" to hide iframe -->
+</body>
+</html>
